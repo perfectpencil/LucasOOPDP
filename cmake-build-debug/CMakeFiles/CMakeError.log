@@ -1,0 +1,62 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: C:/Users/Candy/projects/oop-spring2018-public/LucasOOPDP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_276ed/fast"
+mingw32-make.exe[1]: Entering directory 'C:/Users/Candy/projects/oop-spring2018-public/LucasOOPDP/cmake-build-debug/CMakeFiles/CMakeTmp'
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_276ed.dir\build.make CMakeFiles/cmTC_276ed.dir/build
+mingw32-make.exe[2]: Entering directory 'C:/Users/Candy/projects/oop-spring2018-public/LucasOOPDP/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_276ed.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_276ed.dir\CheckSymbolExists.c.obj   -c C:\Users\Candy\projects\oop-spring2018-public\LucasOOPDP\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+Linking C executable cmTC_276ed.exe
+"C:\Program Files\JetBrains\CLion 2017.3.4\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_276ed.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2017.3.4\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_276ed.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_276ed.dir/objects.a @CMakeFiles\cmTC_276ed.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_276ed.dir/objects.a -Wl,--no-whole-archive  -o cmTC_276ed.exe -Wl,--out-implib,libcmTC_276ed.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_276ed.dir\linklibs.rsp
+CMakeFiles\cmTC_276ed.dir/objects.a(CheckSymbolExists.c.obj):CheckSymbolExists.c:(.text+0x12): undefined reference to `pthread_create'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\cmTC_276ed.dir\build.make:98: recipe for target 'cmTC_276ed.exe' failed
+mingw32-make.exe[2]: *** [cmTC_276ed.exe] Error 1
+mingw32-make.exe[2]: Leaving directory 'C:/Users/Candy/projects/oop-spring2018-public/LucasOOPDP/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_276ed/fast' failed
+mingw32-make.exe[1]: *** [cmTC_276ed/fast] Error 2
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Candy/projects/oop-spring2018-public/LucasOOPDP/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+File C:/Users/Candy/projects/oop-spring2018-public/LucasOOPDP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/Users/Candy/projects/oop-spring2018-public/LucasOOPDP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_3b1ce/fast"
+mingw32-make.exe[1]: Entering directory 'C:/Users/Candy/projects/oop-spring2018-public/LucasOOPDP/cmake-build-debug/CMakeFiles/CMakeTmp'
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_3b1ce.dir\build.make CMakeFiles/cmTC_3b1ce.dir/build
+mingw32-make.exe[2]: Entering directory 'C:/Users/Candy/projects/oop-spring2018-public/LucasOOPDP/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3b1ce.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles\cmTC_3b1ce.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\JetBrains\CLion 2017.3.4\bin\cmake\share\cmake-3.9\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_3b1ce.exe
+"C:\Program Files\JetBrains\CLion 2017.3.4\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3b1ce.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2017.3.4\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_3b1ce.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_3b1ce.dir/objects.a @CMakeFiles\cmTC_3b1ce.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -DCHECK_FUNCTION_EXISTS=pthread_create    -Wl,--whole-archive CMakeFiles\cmTC_3b1ce.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3b1ce.exe -Wl,--out-implib,libcmTC_3b1ce.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_3b1ce.dir\linklibs.rsp
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot find -lpthreads
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\cmTC_3b1ce.dir\build.make:98: recipe for target 'cmTC_3b1ce.exe' failed
+mingw32-make.exe[2]: *** [cmTC_3b1ce.exe] Error 1
+mingw32-make.exe[2]: Leaving directory 'C:/Users/Candy/projects/oop-spring2018-public/LucasOOPDP/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_3b1ce/fast' failed
+mingw32-make.exe[1]: *** [cmTC_3b1ce/fast] Error 2
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Candy/projects/oop-spring2018-public/LucasOOPDP/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+

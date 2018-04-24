@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/TestMoveServant.dir/src/main.cpp.o CMakeFiles/TestMoveServant.dir/src/TestMoveServant.cpp.o  -o ../bin/TestMoveServant -lpthread ../lib/libgtest.a ../lib/libsources.a -lpthread 

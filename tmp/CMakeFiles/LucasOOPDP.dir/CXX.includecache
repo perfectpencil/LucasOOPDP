@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Ant.h
+
+/mnt/c/Users/Candy/projects/oop-spring2018-public/LucasOOPDP/src/Ant.cpp
+Ant.h
+/mnt/c/Users/Candy/projects/oop-spring2018-public/LucasOOPDP/src/Ant.h
+
+/mnt/c/Users/Candy/projects/oop-spring2018-public/LucasOOPDP/src/main.cpp
+iostream
+-
+

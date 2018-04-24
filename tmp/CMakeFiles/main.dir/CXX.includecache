@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/fridge.h
+memory
+-
+
+/mnt/c/Users/Candy/projects/Fridge/src/fridge.cpp
+fridge.h
+/mnt/c/Users/Candy/projects/Fridge/src/fridge.h
+iostream
+-
+stdexcept
+-
+sstream
+-
+
+/mnt/c/Users/Candy/projects/Fridge/src/main.cpp
+ostream
+-
+iostream
+-
+fridge.h
+/mnt/c/Users/Candy/projects/Fridge/src/fridge.h
+
